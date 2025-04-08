@@ -1,5 +1,5 @@
 from Nodo import Nodo
-from reina import Reina
+from reina import reina
 from Observar import observar
 
 def resolver_n_reinas(n):
