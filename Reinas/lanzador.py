@@ -17,7 +17,7 @@ def resolver_n_reinas(n):
             continue
 
         for columna in range(n):
-            nueva_reina = Reina(fila_actual, columna)
+            nueva_reina = reina(fila_actual, columna)
             if all(not nueva_reina.amenaza(reina) for reina in tablero_actual):
                 # Si la nueva reina no es amenazada, creamos un nuevo nodo
                 nuevo_tablero = tablero_actual + [nueva_reina]
